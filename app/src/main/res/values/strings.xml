@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">철원버스</string>
+    <string name="btnFavoritesText">즐겨찾기</string>
+    <string name="btnSearchText">버스 노선도 검색</string>
 </resources>
