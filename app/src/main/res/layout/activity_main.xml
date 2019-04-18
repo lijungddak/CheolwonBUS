@@ -6,26 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnFavorites"
-        android:layout_width="130dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btnFavoritesText"
-        android:background="@drawable/my_button_bg"
-        android:layout_marginLeft="73dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btnFavorites"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnFavoritesText"
+            android:background="@drawable/my_button_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btnSearchText"
-        android:background="@drawable/my_button_bg"
-        android:layout_marginLeft="10dp"
-        app:layout_constraintStart_toEndOf="@id/btnFavorites"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSearchText"
+            android:background="@drawable/my_button_bg"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toEndOf="@id/btnFavorites"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
