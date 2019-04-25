@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".item_busInfo">
+
+    <TextView
+        android:id="@+id/tvBusName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버스이름"
+        android:textSize="32dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnShowMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="노선도보기"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/tvBusName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남은시간"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/tvRemainingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YYYY-MM-DD"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="150dp"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다음시간"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tvNextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YYYY-MM-DD"
+                android:textSize="18dp"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
